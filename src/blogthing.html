@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {font-family: c∑omfortaa;}
+
+        .index {
+            display: inline-flex;
+            flex-direction: column;
+            width: 0%;
+            color: #001011;
+            border: 5px solid #855A5C;
+            background-color: #b37b7d54;
+            padding: 5px;
+            overflow-x: hidden;
+            opacity: 0%;
+            animation: sidebar 0.5 forwards
+        }
+        @keyframes sidebar {
+            100% {
+                width: 20%;
+                opacity: 100%;
+            }
+        }
+        .list-item {
+            display: flex;
+            height: min-content;
+            justify-content: space-between;
+            opacity: 200%;
+
+        }
+        @keyframes hovereffect {
+            100% {
+                padding-left: 25%;
+                padding-right: 10%;
+            }
+        }
+        .list-item:hover {
+            animation: hovereffect 0.3s forwards;
+
+        }
+        .content {
+            display: inline-flex;
+            height: min-content;
+            justify-content: left;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .background {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: #4a0c0c;
+        }
+    </style>
+    <script>
+        const sidebar = document.getElementById("sidebar")
+        const sidebarButton = document.getElementById("sidebarButton")
+
+        function toggleSideBar() {
+            console.log(sidebar.style.animationPlayState)
+        }
+        let x=0
+        while (x=1) {toggleSideBar}
+    </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="background">
+    <div id="sidebar" class="index">
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+        <div class="list-item">
+            <div class="content"><p>Content</p></div>
+            <p>Page 1</p>
+        </div>
+    </div>
+    <div style="display: inline-flex; height: min-content; margin: auto; margin-top: 0;">
+        <h1><b>Title Goes Here</b></h1>
+    </div>
+    <div>
+        <button id="sidebarButton"></button>
+    </div>
+</div>
+</body>
+</html>
+
+<body>
+
+</body>

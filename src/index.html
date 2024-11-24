@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Ultimate Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Varela Round";
+        }
+        .container {
+            background: darkgray;
+            border-color: #000000;
+            border-width: 10px;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            width: fit-content;
+        }
+        .author-name {
+            color: red;
+            border-radius: 8px;
+            background: gray;
+            padding: 2px
+        }
+        .message {
+            margin: 10px;
+            color: blue;
+        }
+        .chatroom {
+            border-radius: 10px;
+            border-color: green;
+        }
+    </style>
+    <script>
+        function send_message() {
+        const form = document.forms['send_message'];
+        const messagebox = document.getElementById('chatroom');
+
+            form.addEventListener('submit', (e) => {
+                console.log("printing message")
+                console.log("author:" + e.elements['author'])
+                let message = document.createElement("div")
+                message.className = "container"
+            message.innerHTML = ("<a class=\"author-name\">' + e.elements['author'].value '</a>: <p class=\"message\">'  + e.elements['message'].value + '</p>")
+
+            messagebox.appendChild(messagebox)
+        });
+        }
+
+    </script>
+</head>
+    <body>
+    <div style="text-align: center">
+        <h1>
+            Maddie's Website
+        </h1>
+        <a href="rickroll.html">
+            <button>Click Me!</button>
+        </a>
+        <a href="download">
+            <button>Download a file?</button>
+        </a>
+        <form action="javascript:send_message()" target="_self" method="POST" name="send_message">
+            author: <input type="text" name="author"><br>
+            message: <input type="text" name="message"><br>
+            <input type="submit">
+        </form>
+    </div>
+    <div id="chatroom" class="chatroom">
+    <?php
+    require("read_messages.php");
+    ?>
+    </div>
+    </body>
+</html>
