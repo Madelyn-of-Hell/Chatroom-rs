@@ -1,0 +1,34 @@
+{
+  "pages": {
+    "/": [
+      "HTTP/1.1 200 OK",
+      "Site Files/index.html",
+      "text/html",
+      "inline"
+    ],
+    "/Never_Gonna_Give_You_Up.webm": [
+      "HTTP/1.1 200 OK",
+      "Site Files/Rick Astley - Never Gonna Give You Up (Official Music Video) [dQw4w9WgXcQ].webm",
+      "video/webm",
+      "inline"
+    ],
+    "/404": [
+      "HTTP/1.1 200 OK",
+      "Site Files/404.html",
+      "text/html",
+      "inline"
+    ],
+    "/Rickroll": [
+      "HTTP/1.1 200 OK",
+      "Site Files/rickroll.html",
+      "text/html",
+      "inline"
+    ],
+    "/Download": [
+      "HTTP/1.1 200 OK",
+      "Site Files/open_me.txt",
+      "text/plain",
+      "attachment; filename=\"open_me.txt\""
+    ]
+  }
+}
