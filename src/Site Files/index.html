@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>The Ultimate Test</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="/submission-point" href="/submission-point" type="text/javascript">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
@@ -63,9 +65,10 @@
         <a href="Download">
             <button>Download a file?</button>
         </a>
-        <form action="javascript:send_message()" target="_self" method="POST" name="send_message">
+        <form action="/" method="POST" name="send_message">
             author: <input type="text" name="author"><br>
             message: <input type="text" name="message"><br>
+            <input name="|||" type="hidden" value="">
             <input type="submit">
         </form>
     </div>
